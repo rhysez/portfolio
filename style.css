@@ -11,6 +11,7 @@ html {
 }
 
 body {
+    font-family: 'Archivo', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -20,11 +21,10 @@ body {
     padding: 1.25rem;
     justify-content: flex-end;
     gap: 3rem;
-    box-shadow: 0 4px 6px -2px gray;
+    box-shadow: 0 2px 3px -2px gray;
 }
 
 .navButton {
-    font-family: 'Archivo', sans-serif;
     font-weight: 700;
     font-size: 1.75rem;
     background: none;
@@ -35,14 +35,13 @@ body {
 
 #introductionContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #introduction {
-    font-family: 'Archivo', sans-serif;
     display: flex;
     flex-direction: column;
-    margin-top: 22rem;
+    margin-top: 18rem;
 }
 
 .myName {
@@ -54,11 +53,31 @@ body {
 }
 
 .frontEndDeveloper {
-    font-weight: 300;
-    font-size: 5rem;
+    font-weight: 700;
+    font-size: 5.5rem;
     color: var(--web-developer);
     margin: 0;
     padding: 0;
+}
+
+.tagLine {
+    font-weight: 300;
+    font-size: 4rem;
+    color: var(--darker-text);
+    margin: 0;
+    padding: 0;
+}
+
+.lightbulb {
+    filter: invert(47%) sepia(34%) saturate(3394%) hue-rotate(218deg) brightness(105%) contrast(101%);
+    width: 20rem;
+    height: 20rem;
+    margin-top: 18rem;
+    transition: all ease-in-out 0.25s;
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 #arrowDownContainer {
@@ -79,12 +98,43 @@ body {
     filter: invert(45%) sepia(0%) saturate(518%) hue-rotate(144deg) brightness(89%) contrast(87%);
     cursor: pointer;
     transition: all ease-in-out 0.25s;
-    animation-name: bounce;
-    animation-timing-function: ease;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
 }
 
 .arrowDown:hover {
     filter: invert(40%) sepia(78%) saturate(1019%) hue-rotate(215deg) brightness(109%) contrast(101%);
+    transform: scale(1.2);
+}
+
+/* about section */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+
+.aboutMe {
+    max-width: 80%;
+}
+
+.aboutMePara {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--darker-text);
+}
+
+#techStack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--darker-text);
+}
+
+.techStackTitle {
+    color: var(--light-text);
+    font-weight: 800;
+    font-size: 5.5rem;
 }
