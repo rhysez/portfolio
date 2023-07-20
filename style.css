@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;700;800&display=swap');
+
+:root {
+    --darker-text: rgb(105, 105, 105);
+    --web-developer: rgb(126, 126, 255);
+    --light-text: white;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#navBar {
+    display: flex;
+    padding: 1.25rem;
+    justify-content: flex-end;
+    gap: 3rem;
+    box-shadow: 0 4px 6px -2px gray;
+}
+
+.navButton {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--darker-text);
+}
+
+#introductionContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#introduction {
+    font-family: 'Archivo', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 22rem;
+}
+
+.myName {
+    font-weight: 800;
+    font-size: 10rem;
+    color: var(--darker-text);
+    margin: 0;
+    padding: 0;
+}
+
+.frontEndDeveloper {
+    font-weight: 300;
+    font-size: 5rem;
+    color: var(--web-developer);
+    margin: 0;
+    padding: 0;
+}
