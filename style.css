@@ -60,3 +60,31 @@ body {
     margin: 0;
     padding: 0;
 }
+
+#arrowDownContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 18rem;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.arrowDown {
+    width: 6rem;
+    height: 6rem;
+    filter: invert(45%) sepia(0%) saturate(518%) hue-rotate(144deg) brightness(89%) contrast(87%);
+    cursor: pointer;
+    transition: all ease-in-out 0.25s;
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.arrowDown:hover {
+    filter: invert(40%) sepia(78%) saturate(1019%) hue-rotate(215deg) brightness(109%) contrast(101%);
+}
