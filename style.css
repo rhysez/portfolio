@@ -67,9 +67,10 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
     justify-content: flex-end;
-    gap: 3rem;
+    gap: 1rem;
     box-shadow: 0 2px 3px -2px gray;
     background-color: white;
     z-index: 1;
