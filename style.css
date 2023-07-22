@@ -13,6 +13,19 @@
     #aboutMePara1, #aboutMePara2 {
         font-size: 6vw
     }
+    #htmlIcon,
+    #cssIcon,
+    #jsIcon,
+    #reactIcon,
+    #gitIcon,
+    #webpackIcon,
+    #jestIcon,
+    #bashIcon {
+        width: 10vw;
+    }
+    #icons {
+        gap: 3rem;
+    }
 }
 
 :root {
@@ -67,6 +80,8 @@ body {
     color: var(--darker-text);
     margin: 0;
     padding: 0;
+    animation: fadeIn 1s;
+    transition: all ease-in-out;
 }
 
 .frontEndDeveloper {
@@ -75,6 +90,8 @@ body {
     color: var(--web-developer);
     margin: 0;
     padding: 0;
+    animation: fadeIn 2s;
+    transition: all ease-in-out;
 }
 
 .tagLine {
@@ -83,6 +100,8 @@ body {
     color: var(--darker-text);
     margin: 0;
     padding: 0;
+    animation: fadeIn 5s;
+    transition: all ease-in-out;
 }
 
 .lightbulb {
@@ -111,6 +130,11 @@ body {
     100% { transform: translateY(0); }
 }
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 .arrowDown {
     max-width: 6rem;
     filter: invert(45%) sepia(0%) saturate(518%) hue-rotate(144deg) brightness(89%) contrast(87%);
@@ -127,7 +151,7 @@ body {
 
 @keyframes bounceText {
     0%   { transform: translateY(0); }
-    50%  { transform: translateY(-2px); }
+    50%  { transform: translateY(-4px); }
     100% { transform: translateY(0); }
 }
 
@@ -181,17 +205,44 @@ body {
     animation-iteration-count: infinite;
 }
 
-/* tech stack*/
+/* tech stack */
 
 #techStack {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--darker-text);
+    padding-top: 5rem;
+    padding-bottom: 10rem;
 }
 
 .techStackTitle {
     color: var(--light-text);
     font-weight: 800;
-    font-size: 5.5rem;
+    font-size: 4vw;
+    padding-bottom: 4rem;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 6rem;
+}
+
+.icon {
+    width: 8vw;
+    transition: all ease-in-out 0.25s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* projects */
+
+.projectsTitle {
+    color: var(--darker-text);
+    font-size: 4vw;
+    text-align: center;
 }
