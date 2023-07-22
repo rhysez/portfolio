@@ -64,10 +64,15 @@ body {
 
 .navBar {
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding: 1.25rem;
     justify-content: flex-end;
     gap: 3rem;
     box-shadow: 0 2px 3px -2px gray;
+    background-color: white;
+    z-index: 1;
 }
 
 .navButton {
