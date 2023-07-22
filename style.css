@@ -1,9 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;700;800&display=swap');
 
+@media (max-width: 400px){
+    #navBar {
+        gap: 1rem;
+    }
+    #arrowDown {
+        max-width: 4rem;
+    }
+}
+
+@media (max-width: 900px){
+    #aboutMePara1, #aboutMePara2 {
+        font-size: 6vw
+    }
+}
+
 :root {
     --darker-text: rgb(105, 105, 105);
     --web-developer: rgb(126, 126, 255);
     --light-text: white;
+    --javascript: rgb(219, 198, 5);
+    --react: rgb(0, 140, 255);
 }
 
 html {
@@ -16,7 +33,7 @@ body {
     padding: 0;
 }
 
-#navBar {
+.navBar {
     display: flex;
     padding: 1.25rem;
     justify-content: flex-end;
@@ -41,12 +58,12 @@ body {
 #introduction {
     display: flex;
     flex-direction: column;
-    margin-top: 18rem;
+    padding-top: 18rem;
 }
 
 .myName {
     font-weight: 800;
-    font-size: 10rem;
+    font-size: 8vw;
     color: var(--darker-text);
     margin: 0;
     padding: 0;
@@ -54,7 +71,7 @@ body {
 
 .frontEndDeveloper {
     font-weight: 700;
-    font-size: 5.5rem;
+    font-size: 5vw;
     color: var(--web-developer);
     margin: 0;
     padding: 0;
@@ -62,7 +79,7 @@ body {
 
 .tagLine {
     font-weight: 300;
-    font-size: 4rem;
+    font-size: 3vw;
     color: var(--darker-text);
     margin: 0;
     padding: 0;
@@ -70,9 +87,6 @@ body {
 
 .lightbulb {
     filter: invert(47%) sepia(34%) saturate(3394%) hue-rotate(218deg) brightness(105%) contrast(101%);
-    width: 20rem;
-    height: 20rem;
-    margin-top: 18rem;
     transition: all ease-in-out 0.25s;
     animation-name: bounce;
     animation-timing-function: ease;
@@ -80,7 +94,12 @@ body {
     animation-iteration-count: infinite;
 }
 
-#arrowDownContainer {
+.lightbulbContainer {
+    width: 15%;
+    padding-top: 18rem;
+}
+
+.arrowDownContainer {
     display: flex;
     justify-content: center;
     padding-top: 18rem;
@@ -93,8 +112,7 @@ body {
 }
 
 .arrowDown {
-    width: 6rem;
-    height: 6rem;
+    max-width: 6rem;
     filter: invert(45%) sepia(0%) saturate(518%) hue-rotate(144deg) brightness(89%) contrast(87%);
     cursor: pointer;
     transition: all ease-in-out 0.25s;
@@ -107,6 +125,12 @@ body {
 
 /* about section */
 
+@keyframes bounceText {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-2px); }
+    100% { transform: translateY(0); }
+}
+
 #about {
     display: flex;
     flex-direction: column;
@@ -117,13 +141,44 @@ body {
 }
 
 .aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 80%;
 }
 
-.aboutMePara {
-    font-size: 5rem;
+.aboutMePara1 {
+    font-size: 4vw;
     font-weight: 700;
     color: var(--darker-text);
+}
+
+.aboutMePara2 {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 700;
+    color: var(--darker-text);
+}
+
+.javascript {
+    display: inline-block;
+    color: var(--web-developer);
+    transition: all ease-in-out 0.25s;
+    animation-name: bounceText;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.react {
+    display: inline-block;
+    color: var(--web-developer);
+    transition: all ease-in-out 0.25s;
+    animation-name: bounceText;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 #techStack {

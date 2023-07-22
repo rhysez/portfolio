@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rhys Hodgson, Front End Developer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-     <div id="navBar">
-         <button class="navButton">About</button>
-         <button class="navButton">Projects</button>
-         <button class="navButton">Contact</button>
-         <button class="navButton" id="darkMode">Dark*</button>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navBar" id="navBar">
+      <button class="navButton">About</button>
+      <button class="navButton">Projects</button>
+      <button class="navButton">Contact</button>
+      <button class="navButton" id="darkMode">Dark*</button>
     </div>
-
 
     <div id="introductionContainer">
-        <div id="introduction">
-            <h1 class="myName">Rhys Hodgson</h1>
-            <h2 class="frontEndDeveloper">Front End Developer.</h2>
-            <h3 class="tagLine">Bringing ideas into reality.</h3>
-        </div>
-        <img src="./images/lightbulb.svg" alt="lightbulb" class="lightbulb">
+      <div id="introduction">
+        <h1 class="myName">Rhys Hodgson</h1>
+        <h2 class="frontEndDeveloper">Front End Developer.</h2>
+        <h3 class="tagLine">Sparking ideas into applications.</h3>
+      </div>
+
+      <div class="lightbulbContainer">
+        <img src="./images/lightbulb.svg" alt="lightbulb" class="lightbulb" />
+      </div>
     </div>
 
-    <div id="arrowDownContainer">
-        <img src="./images/arrow-down.svg" alt="arrow down" class="arrowDown">
+    <div class="arrowDownContainer" id="arrowDownContainer">
+      <img
+        src="./images/arrow-down.svg"
+        alt="arrow down"
+        class="arrowDown"
+        id="arrowDown"
+      />
     </div>
 
     <div id="about">
-        <div class="aboutMe">
-            <p class="aboutMePara">Paragraph about me. Paragraph about me. Paragraph about me. Paragraph about me. Paragraph about me.</p>
-        </div>
+      <div class="aboutMe">
+        <p class="aboutMePara1" id="aboutMePara1">
+          I like building cool websites. 
+        </p>
+        <p class="aboutMePara2" id="aboutMePara2">I'm a strong
+            <span class="javascript">JavaScript</span> and <span class="react">React</span> developer with a passion for building beautiful,
+            responsive applications.</p>
+      </div>
     </div>
 
     <div id="techStack">
-        <h1 class="techStackTitle">Technologies</h1>
+      <h1 class="techStackTitle">Technologies</h1>
     </div>
 
-    <div id="projects">
+    <div id="projects"></div>
 
-    </div>
-
-    <div id="contact">
-
-    </div>
-</body>
+    <div id="contact"></div>
+  </body>
 </html>
