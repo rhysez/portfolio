@@ -48,7 +48,7 @@
     --light-text: white;
     --javascript: rgb(219, 198, 5);
     --react: rgb(0, 140, 255);
-    --technologies: rgb(195, 195, 195);
+    --technologies: rgb(231, 228, 228);
 }
 
 html {
@@ -183,7 +183,7 @@ body {
 
 .aboutMePara2 {
     text-align: center;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 300;
     color: var(--darker-text);
 }
@@ -267,13 +267,14 @@ body {
 .project {
     display: flex;
     justify-content: space-between;
-    gap: 10rem;
+    gap: 6rem;
     width: 80%;
 }
 
 .projectDescription {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     font-size: 2vw;
 }
@@ -282,6 +283,10 @@ body {
     max-width: 50%;
     border-radius: 20px;
     box-shadow: 1px 4px 9px 6px gray;
+}
+
+.github {
+    width: 4vw;
 }
 
 /* contact */
