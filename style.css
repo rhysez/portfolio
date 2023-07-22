@@ -156,7 +156,7 @@ body {
 .aboutMePara2 {
     text-align: center;
     font-size: 4vw;
-    font-weight: 700;
+    font-weight: 300;
     color: var(--darker-text);
 }
 
@@ -180,6 +180,8 @@ body {
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
+
+/* tech stack*/
 
 #techStack {
     display: flex;
