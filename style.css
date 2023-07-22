@@ -38,7 +38,9 @@
         width: 30%;
     }
 
-
+    #arrowUpImg {
+        width: 8vw;
+    }
 }
 
 :root {
@@ -169,8 +171,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10rem;
-    padding-top: 5%;
+    margin-top: 4.5rem;
+    padding-top: 8%;
     padding-bottom: 15%;
 }
 
@@ -293,6 +295,18 @@ body {
 
 .github {
     width: 4vw;
+}
+
+.arrowUp {
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.arrowUpImg {
+    width: 4vw;
+    cursor: pointer;
+    filter: invert(44%) sepia(0%) saturate(146%) hue-rotate(145deg) brightness(88%) contrast(82%);
 }
 
 /* contact */
