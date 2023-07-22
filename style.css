@@ -21,11 +21,27 @@
     #webpackIcon,
     #jestIcon,
     #bashIcon {
-        width: 10vw;
+        width: 12vw;
     }
     #icons {
         gap: 3rem;
     }
+
+    #introductionContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #introduction {
+        align-items: center;
+    }
+
+    #lightbulbContainer {
+        padding-top: 10rem;
+        width: 30%;
+    }
+
+
 }
 
 :root {
@@ -63,12 +79,16 @@ body {
     color: var(--darker-text);
 }
 
-#introductionContainer {
+.navButton:hover {
+    color: var(--web-developer);
+}
+
+.introductionContainer {
     display: flex;
     justify-content: space-evenly;
 }
 
-#introduction {
+.introduction {
     display: flex;
     flex-direction: column;
     padding-top: 18rem;
@@ -151,7 +171,7 @@ body {
 
 @keyframes bounceText {
     0%   { transform: translateY(0); }
-    50%  { transform: translateY(-4px); }
+    50%  { transform: translateY(-0.5vh); }
     100% { transform: translateY(0); }
 }
 
@@ -245,4 +265,5 @@ body {
     color: var(--darker-text);
     font-size: 4vw;
     text-align: center;
+    padding-top: 6rem;
 }
