@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="navBar" id="navBar">
-      <button class="navButton">About</button>
+      <a href="#about"><button class="navButton">About</button></a>
       <button class="navButton">Projects</button>
       <button class="navButton">Contact</button>
       <button class="navButton" id="darkMode">Dark*</button>
@@ -24,15 +24,6 @@
       <div id="lightbulbContainer" class="lightbulbContainer">
         <img src="./images/lightbulb.svg" alt="lightbulb" class="lightbulb" />
       </div>
-    </div>
-
-    <div class="arrowDownContainer" id="arrowDownContainer">
-      <img
-        src="./images/arrow-down.svg"
-        alt="arrow down"
-        class="arrowDown"
-        id="arrowDown"
-      />
     </div>
 
     <div id="about">
@@ -65,8 +56,37 @@
     <div id="projects">
         <h1 class="projectsTitle">&lt;My work/&gt;</h1>
         <div class="projectGrid">
+          <div class="project">
+            <img class="projectImg" src="./images/todolistdesktopdark.png" alt="to do list">
+            <div class="projectDescription">
+              <a href="https://rhysez.github.io/todolist/"><h3>YourDoing</h3></a>
+              <p class="projectPara">A to-do list web app that uses object oriented JavaScript and the localStorage API to save tasks to your device locally. Allows the user to set a title, description, priority level and group for each task.</p>
+            </div>
+          </div>
 
+          <div class="project">
+            <div class="projectDescription">
+              <a href="https://rhysez.github.io/library/"><h3>eBook Library</h3></a>
+              <p class="projectPara">An eBook library web app that uses object-oriented JavaScript to render book objects with a title, description, page count and whether you have read the book.</p>
+            </div>
+            <img class="projectImg" src="./images/library-example.png" alt="library">
         </div>
+
+        <div class="project">
+          <img class="projectImg" src="./images/weather-desktop-example.png" alt="library">
+          <div class="projectDescription">
+            <a href="https://rhysez.github.io/weather-app/"><h3>Weather.js</h3></a>
+            <p class="projectPara">Using the Weather API, Weather.js uses asynchronous JavaScript to fetch weather data in real time and display it to the user.</p>
+          </div>
+      </div>
+
+      <div class="project">
+        <div class="projectDescription">
+          <a href="https://rhysez.github.io/battleship/"><h3>Battleship</h3></a>
+          <p class="projectPara">A browser Battleship game which is played against a simple AI. This project was built using proper unit testing in Jest to guarantee robust and functional code.</p>
+        </div>
+        <img class="projectImg" src="./images/battleship-example.png" alt="library">
+    </div>
     </div>
 
     <div id="contact"></div>

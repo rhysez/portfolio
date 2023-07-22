@@ -4,9 +4,6 @@
     #navBar {
         gap: 1rem;
     }
-    #arrowDown {
-        max-width: 4rem;
-    }
 }
 
 @media (max-width: 900px){
@@ -46,10 +43,12 @@
 
 :root {
     --darker-text: rgb(105, 105, 105);
+    --even-darker-text: rgb(70, 70, 70);
     --web-developer: rgb(126, 126, 255);
     --light-text: white;
     --javascript: rgb(219, 198, 5);
     --react: rgb(0, 140, 255);
+    --technologies: rgb(195, 195, 195);
 }
 
 html {
@@ -86,6 +85,7 @@ body {
 .introductionContainer {
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 20rem;
 }
 
 .introduction {
@@ -138,11 +138,6 @@ body {
     padding-top: 18rem;
 }
 
-.arrowDownContainer {
-    display: flex;
-    justify-content: center;
-    padding-top: 18rem;
-}
 
 @keyframes bounce {
     0%   { transform: translateY(0); }
@@ -153,18 +148,6 @@ body {
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-}
-
-.arrowDown {
-    max-width: 6rem;
-    filter: invert(45%) sepia(0%) saturate(518%) hue-rotate(144deg) brightness(89%) contrast(87%);
-    cursor: pointer;
-    transition: all ease-in-out 0.25s;
-}
-
-.arrowDown:hover {
-    filter: invert(40%) sepia(78%) saturate(1019%) hue-rotate(215deg) brightness(109%) contrast(101%);
-    transform: scale(1.2);
 }
 
 /* about section */
@@ -231,13 +214,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--darker-text);
+    background-color: var(--technologies);
     padding-top: 5rem;
     padding-bottom: 10rem;
 }
 
 .techStackTitle {
-    color: var(--light-text);
+    color: var(--even-darker-text);
     font-weight: 800;
     font-size: 4vw;
     padding-bottom: 4rem;
@@ -248,6 +231,9 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 6rem;
+    background-color: white;
+    padding: 5rem;
+    border-radius: 20px;
 }
 
 .icon {
@@ -266,4 +252,33 @@ body {
     font-size: 4vw;
     text-align: center;
     padding-top: 6rem;
+}
+
+.projectGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+    gap: 25vh;
+    color: var(--darker-text);
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    width: 80%;
+}
+
+.projectDescription {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.projectImg {
+    max-width: 50%;
+    border-radius: 20px;
+    box-shadow: 1px 4px 9px 6px gray;
 }
