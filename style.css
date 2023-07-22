@@ -283,3 +283,25 @@ body {
     border-radius: 20px;
     box-shadow: 1px 4px 9px 6px gray;
 }
+
+/* contact */
+
+#contact {
+    margin-top: 10rem;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    background-color: var(--darker-text);
+}
+
+.contactTitle {
+    font-size: 2vw;
+}
+
+.contactEmail {
+    font-size: 1.5vw;
+}
+
+.thankYou {
+    font-size: 1.5vw;
+}
