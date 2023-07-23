@@ -293,6 +293,11 @@ body {
     box-shadow: 1px 4px 9px 6px gray;
 }
 
+.projectIcons {
+    display: flex;
+    gap: 4rem;
+}
+
 .github {
     width: 4vw;
 }
