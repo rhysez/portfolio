@@ -322,6 +322,10 @@ body {
     align-items: center;
     text-align: center;
     font-size: 2vw;
+    box-shadow: 1px 4px 9px 2px rgb(166, 166, 166);
+    border-radius: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .projectImg {
