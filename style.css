@@ -360,7 +360,8 @@ body {
     padding: 2rem;
     text-align: center;
     color: white;
-    background-color: var(--darker-text);
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
 }
 
 .contactTitle {
