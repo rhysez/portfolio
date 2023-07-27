@@ -322,10 +322,9 @@ body {
     align-items: center;
     text-align: center;
     font-size: 2vw;
-    box-shadow: 1px 4px 9px 2px rgb(166, 166, 166);
     border-radius: 20px;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 1rem; 
 }
 
 .projectImg {
@@ -341,6 +340,7 @@ body {
 
 .github {
     width: 4rem;
+    filter: invert(36%) sepia(26%) saturate(0%) hue-rotate(184deg) brightness(106%) contrast(96%);
 }
 
 .arrowUp {
