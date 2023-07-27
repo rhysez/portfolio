@@ -3,10 +3,16 @@
 @media (max-width: 400px){
     #navBar {
         gap: 1rem;
+        justify-content: center;
     }
 }
 
 @media (max-width: 900px){
+    #navBar {
+        gap: 1rem;
+        justify-content: center;
+    }
+
     #aboutMePara1, #aboutMePara2 {
         font-size: 6vw
     }
@@ -18,10 +24,7 @@
     #webpackIcon,
     #jestIcon,
     #bashIcon {
-        width: 12vw;
-    }
-    #icons {
-        gap: 3rem;
+        width: 8vw;
     }
 
     #introductionContainer {
@@ -57,6 +60,10 @@
     #github {
         width: 2rem;
     }
+
+    #techStackTitle, #projectsTitle {
+        font-size: 2rem;
+    }
 }
 
 :root {
@@ -83,8 +90,8 @@ body {
     display: flex;
     position: fixed;
     top: 0;
-    width: 100%;
-    padding-top: 1.25rem;
+    width: 100vw;
+    padding-top: 2rem;
     padding-bottom: 1.25rem;
     justify-content: flex-end;
     gap: 1rem;
@@ -159,6 +166,7 @@ body {
     animation-timing-function: ease;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    cursor: pointer;
 }
 
 .lightbulbContainer {
@@ -274,11 +282,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 6rem;
+    gap: 2rem;
 }
 
 .icon {
-    width: 6vw;
+    width: 4vw;
     transition: all ease-in-out 0.25s;
     background-color: rgb(255, 255, 255, 0.1);
     border-radius: 10%;
@@ -294,7 +302,7 @@ body {
 
 .projectsTitle {
     color: var(--darker-text);
-    font-size: 4vw;
+    font-size: 4rem;
     text-align: center;
     padding-top: 6rem;
 }
