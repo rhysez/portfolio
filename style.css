@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;700;800&display=swap');
 
-@media (max-width: 400px){
-    #navBar {
-        gap: 1rem;
-        justify-content: center;
-    }
-}
-
 @media (max-width: 900px){
     #navBar {
         gap: 1rem;
