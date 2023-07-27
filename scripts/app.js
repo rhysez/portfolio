@@ -40,7 +40,7 @@ const darkMode = () => {
         element.projectPara.forEach((para) => {
             para.style.color = 'var(--darker-text'
         })
-            lement.projectName.forEach((name) => {
+            element.projectName.forEach((name) => {
                 name.style.color = 'var(--darker-text'
         })
     }
