@@ -101,6 +101,7 @@ body {
     border: none;
     cursor: pointer;
     color: var(--light-text);
+    margin-right: 2rem;
 }
 
 .navButton:hover {
@@ -119,7 +120,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 18rem;
-    padding-bottom: 15rem;
+    padding-bottom: 20%;
 }
 
 .myName {
