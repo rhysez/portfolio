@@ -119,7 +119,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 18rem;
-    padding-bottom: 12rem;
+    padding-bottom: 15rem;
 }
 
 .myName {
@@ -134,7 +134,7 @@ body {
 
 .frontEndDeveloper {
     font-weight: 700;
-    font-size: 4vw;
+    font-size: 3vw;
     color: var(--even-darker-text);
     margin: 0;
     padding: 0;
@@ -144,7 +144,7 @@ body {
 
 .tagLine {
     font-weight: 300;
-    font-size: 3vw;
+    font-size: 2vw;
     color: white;
     margin: 0;
     padding: 0;
