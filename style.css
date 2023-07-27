@@ -33,13 +33,29 @@
         align-items: center;
     }
 
+    #myName {
+        font-size: 10vw;
+    }
+
+    #frontEndDeveloper {
+        font-size: 7vw;
+    }
+
+    #tagLine {
+        font-size: 4vw;
+    }
+
     #lightbulbContainer {
         padding-top: 10rem;
         width: 30%;
     }
 
-    #arrowUpImg {
+    #arrowUpImg, #arrowDownImg {
         width: 8vw;
+    }
+
+    #github {
+        width: 2rem;
     }
 }
 
@@ -71,8 +87,9 @@ body {
     padding-bottom: 1.25rem;
     justify-content: flex-end;
     gap: 1rem;
-    box-shadow: 0 2px 3px -2px gray;
-    background-color: white;
+    box-shadow: 0 2.5px 1px -2px white;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
     z-index: 1;
 }
 
@@ -82,7 +99,7 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--darker-text);
+    color: var(--light-text);
 }
 
 .navButton:hover {
@@ -93,18 +110,21 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 24rem;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
 }
 
 .introduction {
     display: flex;
     flex-direction: column;
     padding-top: 18rem;
+    padding-bottom: 12rem;
 }
 
 .myName {
     font-weight: 800;
-    font-size: 7vw;
-    color: var(--darker-text);
+    font-size: 6vw;
+    color: white;
     margin: 0;
     padding: 0;
     animation: fadeIn 1s;
@@ -114,7 +134,7 @@ body {
 .frontEndDeveloper {
     font-weight: 700;
     font-size: 4vw;
-    color: var(--web-developer);
+    color: var(--even-darker-text);
     margin: 0;
     padding: 0;
     animation: fadeIn 2s;
@@ -123,8 +143,8 @@ body {
 
 .tagLine {
     font-weight: 300;
-    font-size: 2vw;
-    color: var(--darker-text);
+    font-size: 3vw;
+    color: white;
     margin: 0;
     padding: 0;
     animation: fadeIn 5s;
@@ -132,7 +152,7 @@ body {
 }
 
 .lightbulb {
-    filter: invert(47%) sepia(34%) saturate(3394%) hue-rotate(218deg) brightness(105%) contrast(101%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(124deg) brightness(103%) contrast(101%);
     transition: all ease-in-out 0.25s;
     animation-name: bounce;
     animation-timing-function: ease;
@@ -145,6 +165,21 @@ body {
     padding-top: 18rem;
 }
 
+.arrowDown {
+    display: flex;
+    justify-content: center;
+}
+
+.arrowDownImg {
+    width: 4vw;
+    cursor: pointer;
+    filter: invert(44%) sepia(0%) saturate(146%) hue-rotate(145deg) brightness(88%) contrast(82%);
+    transition: all ease-in-out 0.3s;
+}
+
+.arrowDownImg:hover {
+    transform: scale(1.1)
+}
 
 @keyframes bounce {
     0%   { transform: translateY(0); }
@@ -170,7 +205,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 4.5rem;
-    padding-top: 8%;
+    padding-top: 4%;
     padding-bottom: 20%;
 }
 
@@ -221,15 +256,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--technologies);
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
     padding-top: 5rem;
     padding-bottom: 10rem;
 }
 
 .techStackTitle {
-    color: var(--even-darker-text);
+    color: var(--light-text);
     font-weight: 800;
-    font-size: 4vw;
+    font-size: 4rem;
     padding-bottom: 4rem;
 }
 
@@ -238,14 +274,15 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 6rem;
-    background-color: white;
-    padding: 5rem;
-    border-radius: 20px;
 }
 
 .icon {
-    width: 8vw;
+    width: 6vw;
     transition: all ease-in-out 0.25s;
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 10%;
+    box-shadow: 0 2.5px 1px 2px rgb(255, 255, 255, 0.3);
+    padding: 1.5rem;
 }
 
 .icon:hover {
@@ -293,11 +330,11 @@ body {
 
 .projectIcons {
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .github {
-    width: 4vw;
+    width: 4rem;
 }
 
 .arrowUp {
@@ -310,6 +347,10 @@ body {
     width: 4vw;
     cursor: pointer;
     filter: invert(44%) sepia(0%) saturate(146%) hue-rotate(145deg) brightness(88%) contrast(82%);
+    transition: all ease-in-out 0.3s;
+}
+.arrowUpImg:hover {
+    transform: scale(1.1)
 }
 
 /* contact */
