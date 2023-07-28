@@ -2,7 +2,7 @@
 
 @media (max-width: 900px){
     #navBar {
-        gap: 1rem;
+        gap: 0;
         justify-content: center;
     }
 
@@ -96,12 +96,13 @@ body {
 
 .navButton {
     font-weight: 700;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     background: none;
     border: none;
     cursor: pointer;
     color: var(--light-text);
-    margin-right: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .navButton:hover {
